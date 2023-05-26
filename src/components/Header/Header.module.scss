@@ -1,0 +1,71 @@
+@import '../../sass/variables';
+
+.header {
+  padding: 10px 0;
+  box-shadow: 0px 0px 32px $orange;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoWrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.logoImg {
+  width: 80px;
+}
+.logoText {
+  font-size: 40px;
+  line-height: calc(32 / 40);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+.logoSecondText {
+  font-size: 16px;
+  color: $orange;
+  margin-left: 2px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.link {
+  transition: color 100ms linear;
+  position: relative;
+  display: block;
+  padding: 26px 0;
+  &:hover,
+  &:focus{
+    color: $accent-yellow;
+    &::after{
+        transform: scaleX(1);
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: -3px;
+    width: calc(100% + 6px);
+    height: 5px;
+    border-radius: 4px;
+    background-color: $accent-yellow;
+    transform: scaleX(0);
+    transition: transform 100ms linear;
+  }
+}
+.active {
+    color: $accent-yellow;
+    &::after{
+        transform: scaleX(1);
+    }
+}
