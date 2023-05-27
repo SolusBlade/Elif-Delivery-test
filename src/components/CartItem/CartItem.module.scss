@@ -1,0 +1,78 @@
+@import '../../sass/variables';
+.item{
+    display: flex;
+    // background-color: aqua;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+.imgWrap {
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.itemImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textWrap{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.textName{
+    width: 110px;
+}
+.textPrice{
+    font-size: 16px;
+    font-weight: 700;
+    color: $accent-yellow;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+
+.input{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $accent-yellow;
+    p {
+        width: 50px;
+        text-align: center;
+        font-size: 18px;
+    }
+    button {
+        padding: 0;
+        border: none;
+        background-color: $accent-yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 500;
+        transition: background-color 100ms linear;
+
+        &:hover{
+            background-color: $orange;
+        }
+    }
+}

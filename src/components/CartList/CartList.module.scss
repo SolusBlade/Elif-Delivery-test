@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 30px;
+    
+    width: 565px;
+    height: 750px;
+    overflow-y: auto;
+}

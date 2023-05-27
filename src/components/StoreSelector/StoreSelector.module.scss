@@ -49,6 +49,11 @@
   color: #000;
 }
 
+.radioInput label:has(input:disabled) {
+  color: #cecece;
+  cursor: default;
+}
+
 .radioInput label:has(input:checked) ~ .selection {
   background-color: $accent-yellow;
   display: inline-block;

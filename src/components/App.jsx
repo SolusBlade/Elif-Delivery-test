@@ -1,39 +1,32 @@
 import {  Navigate, Route, Routes } from 'react-router-dom';
-import {  useCallback, useEffect, useState } from 'react';
+import { useEffect} from 'react';
 
-
-
-// import MovieModal from './MovieModal/MovieModal';
 import ShopPage from 'pages/ShopPage/ShopPage';
+import { useDispatch } from 'react-redux';
+import { getListProducts } from 'redux/shop/shopOperations';
+import CartPage from 'pages/CartPage/CartPage';
 
 
 const App = () => {
-  const [modalData, setModalData] = useState(null);
+  const dispatch = useDispatch();
 
-  const hendleOpenModal = useCallback(id => {
-    
-  }, []);
-
-  const hendleCloseModal = () => {
-    setModalData(null);
-  };
+  useEffect(() => {
+    dispatch(getListProducts());
+  }, [dispatch]);
 
   return (
     <>
       <Routes>
         <Route
           path="/shop"
-          element={<ShopPage hendleOpenModal={hendleOpenModal} />}
+          element={<ShopPage />}
         />
         <Route
           path="/cart"
-          // element={<CartPage hendleOpenModal={hendleOpenModal} />}
+          element={<CartPage />}
         />
         <Route path="*" element={<Navigate to="/shop" />} />
       </Routes>
-      {/* {modalData && (
-        <MovieModal modalData={modalData} closeModal={hendleCloseModal} />
-      )} */}
     </>
   );
 };

@@ -1,0 +1,34 @@
+@import '../../sass/variables';
+
+.imgWrap {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.itemImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textWrap{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.textPrice{
+    font-size: 16px;
+    font-weight: 700;
+    color: $accent-yellow;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
