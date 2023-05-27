@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/elif-delivery-test/static/css/main.1c27bb31.css",
+    "main.js": "/elif-delivery-test/static/js/main.7b5e0bf5.js",
+    "static/media/logo.svg": "/elif-delivery-test/static/media/logo.f5184e21b9ea7c2b83060f19f30177ca.svg",
+    "index.html": "/elif-delivery-test/index.html",
+    "static/media/cart.svg": "/elif-delivery-test/static/media/cart.cea67a8f009c24c34c5d960276a8c78f.svg",
+    "static/media/trash.svg": "/elif-delivery-test/static/media/trash.14211eb4c6100f52ebf07cb8ddb18ead.svg",
+    "main.1c27bb31.css.map": "/elif-delivery-test/static/css/main.1c27bb31.css.map",
+    "main.7b5e0bf5.js.map": "/elif-delivery-test/static/js/main.7b5e0bf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c27bb31.css",
+    "static/js/main.7b5e0bf5.js"
+  ]
+}
